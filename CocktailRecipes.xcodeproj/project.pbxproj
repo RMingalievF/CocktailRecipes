@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		824DF0DE294A2170005002D1 /* Teamplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		824DF0DE294A2170005002D1 /* CocktailRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824DF0E1294A2170005002D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		824DF0E3294A2170005002D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		824DF0E5294A2170005002D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		824DF0D5294A2170005002D1 = {
 			isa = PBXGroup;
 			children = (
-				824DF0E0294A2170005002D1 /* Teamplate */,
+				824DF0E0294A2170005002D1 /* CocktailRecipes */,
 				824DF0DF294A2170005002D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		824DF0DF294A2170005002D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				824DF0DE294A2170005002D1 /* Teamplate.app */,
+				824DF0DE294A2170005002D1 /* CocktailRecipes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		824DF0E0294A2170005002D1 /* Teamplate */ = {
+		824DF0E0294A2170005002D1 /* CocktailRecipes */ = {
 			isa = PBXGroup;
 			children = (
 				824DF0FC294A233D005002D1 /* Views */,
@@ -71,7 +71,7 @@
 				824DF0FA294A2317005002D1 /* App */,
 				824DF0FB294A2327005002D1 /* Resourses */,
 			);
-			path = Teamplate;
+			path = CocktailRecipes;
 			sourceTree = "<group>";
 		};
 		824DF0F5294A2266005002D1 /* Networking */ = {
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		824DF0DD294A2170005002D1 /* Teamplate */ = {
+		824DF0DD294A2170005002D1 /* CocktailRecipes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 824DF0F2294A2172005002D1 /* Build configuration list for PBXNativeTarget "Teamplate" */;
+			buildConfigurationList = 824DF0F2294A2172005002D1 /* Build configuration list for PBXNativeTarget "CocktailRecipes" */;
 			buildPhases = (
 				824DF0DA294A2170005002D1 /* Sources */,
 				824DF0DB294A2170005002D1 /* Frameworks */,
@@ -155,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = Teamplate;
+			name = CocktailRecipes;
 			productName = Teamplate;
-			productReference = 824DF0DE294A2170005002D1 /* Teamplate.app */;
+			productReference = 824DF0DE294A2170005002D1 /* CocktailRecipes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 824DF0D9294A2170005002D1 /* Build configuration list for PBXProject "Teamplate" */;
+			buildConfigurationList = 824DF0D9294A2170005002D1 /* Build configuration list for PBXProject "CocktailRecipes" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				824DF0DD294A2170005002D1 /* Teamplate */,
+				824DF0DD294A2170005002D1 /* CocktailRecipes */,
 			);
 		};
 /* End PBXProject section */
@@ -421,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		824DF0D9294A2170005002D1 /* Build configuration list for PBXProject "Teamplate" */ = {
+		824DF0D9294A2170005002D1 /* Build configuration list for PBXProject "CocktailRecipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				824DF0F0294A2172005002D1 /* Debug */,
@@ -430,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		824DF0F2294A2172005002D1 /* Build configuration list for PBXNativeTarget "Teamplate" */ = {
+		824DF0F2294A2172005002D1 /* Build configuration list for PBXNativeTarget "CocktailRecipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				824DF0F3294A2172005002D1 /* Debug */,
