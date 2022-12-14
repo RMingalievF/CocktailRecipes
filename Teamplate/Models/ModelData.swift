@@ -114,4 +114,5 @@ struct Coctail: Decodable {
         case strCreativeCommonsConfirmed
         case dateModified
     }
+    
 }
