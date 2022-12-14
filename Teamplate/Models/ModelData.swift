@@ -9,7 +9,7 @@ struct Drinks: Decodable {
     let drinks: [Coctail]
 }
 struct Coctail: Decodable {
-    let idDrink: String
+    let idDrink: String?
     let strDrink: String?
     let strDrinkAlternate: String?
     let strTags: String?
