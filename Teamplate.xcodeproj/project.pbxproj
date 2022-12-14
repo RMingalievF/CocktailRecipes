@@ -56,15 +56,79 @@
 		824DF0E0294A2170005002D1 /* Teamplate */ = {
 			isa = PBXGroup;
 			children = (
-				824DF0E1294A2170005002D1 /* AppDelegate.swift */,
-				824DF0E3294A2170005002D1 /* SceneDelegate.swift */,
-				824DF0E5294A2170005002D1 /* ViewController.swift */,
-				824DF0E7294A2170005002D1 /* Main.storyboard */,
-				824DF0EA294A2172005002D1 /* Assets.xcassets */,
-				824DF0EC294A2172005002D1 /* LaunchScreen.storyboard */,
-				824DF0EF294A2172005002D1 /* Info.plist */,
+				824DF0FC294A233D005002D1 /* Views */,
+				824DF0F9294A2302005002D1 /* Storyboards */,
+				824DF0F8294A22CD005002D1 /* Services */,
+				824DF0F7294A22BC005002D1 /* Models */,
+				824DF0F5294A2266005002D1 /* Networking */,
+				824DF0F6294A2285005002D1 /* ViewControllers */,
+				824DF0FA294A2317005002D1 /* App */,
+				824DF0FB294A2327005002D1 /* Resourses */,
 			);
 			path = Teamplate;
+			sourceTree = "<group>";
+		};
+		824DF0F5294A2266005002D1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		824DF0F6294A2285005002D1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				824DF0E5294A2170005002D1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		824DF0F7294A22BC005002D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		824DF0F8294A22CD005002D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		824DF0F9294A2302005002D1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				824DF0E7294A2170005002D1 /* Main.storyboard */,
+				824DF0EC294A2172005002D1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		824DF0FA294A2317005002D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				824DF0EF294A2172005002D1 /* Info.plist */,
+				824DF0E1294A2170005002D1 /* AppDelegate.swift */,
+				824DF0E3294A2170005002D1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		824DF0FB294A2327005002D1 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				824DF0EA294A2172005002D1 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		824DF0FC294A233D005002D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Teamplate/Info.plist;
+				INFOPLIST_FILE = Teamplate/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MobileDevOps.Teamplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Teamplate/Info.plist;
+				INFOPLIST_FILE = Teamplate/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MobileDevOps.Teamplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
