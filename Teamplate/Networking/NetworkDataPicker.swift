@@ -11,14 +11,13 @@ class ApiManager {
     
     static let shared = ApiManager()
     
-     func cocktailRequest() {
-        
+    func cocktailRequest() {
         guard let url = URL(string:Links.cocktail.rawValue) else {return }
         URLSession.shared.dataTask(with: url){ data, _, error in
             guard let data else {
                 print(error?.localizedDescription ?? "No ERROR")
                 return
-                }
+            }
             do {
                 let coctail = try JSONDecoder().decode(Drinks.self, from: data)
                 print(coctail)

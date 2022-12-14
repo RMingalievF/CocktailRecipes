@@ -23,8 +23,8 @@ struct Coctail: Decodable {
     let strInstructionsDE: String?
     let strInstructionsFR: String?
     let strInstructionsIT: String?
-    let strInstructionsZH_HANS: String?
-    let strInstructionsZH_HANT: String?
+    let strInstructionsZHhans: String?
+    let strInstructionsZHhant: String?
     let strDrinkThumb: String?
     let strIngredient1: String?
     let strIngredient2: String?
@@ -61,4 +61,57 @@ struct Coctail: Decodable {
     let strCreativeCommonsConfirmed: String?
     let dateModified: String?
     
+    enum CodingKeys: String, CodingKey {
+        case idDrink
+        case strDrink
+        case strDrinkAlternate
+        case strTags
+        case strVideo
+        case strCategory
+        case strIBA
+        case strAlcoholic
+        case strGlass
+        case strInstructions
+        case strInstructionsES
+        case strInstructionsDE
+        case strInstructionsFR
+        case strInstructionsIT
+        case strInstructionsZHhans = "strInstructionsZH-HANS"
+        case strInstructionsZHhant = "trInstructionsZH-HANT"
+        case strDrinkThumb
+        case strIngredient1
+        case strIngredient2
+        case strIngredient3
+        case strIngredient4
+        case strIngredient5
+        case strIngredient6
+        case strIngredient7
+        case strIngredient8
+        case strIngredient9
+        case strIngredient10
+        case strIngredient11
+        case strIngredient12
+        case strIngredient13
+        case strIngredient14
+        case strIngredient15
+        case strMeasure1
+        case strMeasure2
+        case strMeasure3
+        case strMeasure4
+        case strMeasure5
+        case strMeasure6
+        case strMeasure7
+        case strMeasure8
+        case strMeasure9
+        case strMeasure10
+        case strMeasure11
+        case strMeasure12
+        case strMeasure13
+        case strMeasure14
+        case strMeasure15
+        case strImageSource
+        case strImageAttribution
+        case strCreativeCommonsConfirmed
+        case dateModified
+    }
 }
