@@ -88,6 +88,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oUT-Dr-b61"/>
+                    <connections>
+                        <outlet property="coctailCollectionView" destination="J8P-lv-8In" id="hwe-SF-4oY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

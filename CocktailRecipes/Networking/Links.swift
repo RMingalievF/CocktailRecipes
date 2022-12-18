@@ -10,3 +10,8 @@ enum Links: String {
     case listAllCoctailsUrl = "www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
     }
 
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case decodingError
+}

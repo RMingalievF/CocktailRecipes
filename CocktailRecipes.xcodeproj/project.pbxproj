@@ -14,7 +14,7 @@
 		824DF0EB294A2172005002D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EA294A2172005002D1 /* Assets.xcassets */; };
 		824DF0EE294A2172005002D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EC294A2172005002D1 /* LaunchScreen.storyboard */; };
 		824DF102294A2E11005002D1 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF101294A2E11005002D1 /* Links.swift */; };
-		824DF104294A3547005002D1 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF103294A3547005002D1 /* Drinks.swift */; };
+		824DF104294A3547005002D1 /* Coctails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF103294A3547005002D1 /* Coctails.swift */; };
 		824DF106294A3E38005002D1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF105294A3E38005002D1 /* NetworkManager.swift */; };
 		82C6AC39294F2FFD00A5FEDD /* LlistCoctailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC38294F2FFD00A5FEDD /* LlistCoctailsViewController.swift */; };
 		82C6AC3B294F30D600A5FEDD /* CoctailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC3A294F30D600A5FEDD /* CoctailRecipeViewController.swift */; };
@@ -32,7 +32,7 @@
 		824DF0ED294A2172005002D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		824DF0EF294A2172005002D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824DF101294A2E11005002D1 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
-		824DF103294A3547005002D1 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		824DF103294A3547005002D1 /* Coctails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctails.swift; sourceTree = "<group>"; };
 		824DF105294A3E38005002D1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		82C6AC38294F2FFD00A5FEDD /* LlistCoctailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlistCoctailsViewController.swift; sourceTree = "<group>"; };
 		82C6AC3A294F30D600A5FEDD /* CoctailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailRecipeViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		824DF0F7294A22BC005002D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				824DF103294A3547005002D1 /* Drinks.swift */,
+				824DF103294A3547005002D1 /* Coctails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 				824DF106294A3E38005002D1 /* NetworkManager.swift in Sources */,
 				824DF0E6294A2170005002D1 /* MainViewController.swift in Sources */,
 				824DF0E2294A2170005002D1 /* AppDelegate.swift in Sources */,
-				824DF104294A3547005002D1 /* Drinks.swift in Sources */,
+				824DF104294A3547005002D1 /* Coctails.swift in Sources */,
 				82C6AC39294F2FFD00A5FEDD /* LlistCoctailsViewController.swift in Sources */,
 				82C6AC40294F3A5400A5FEDD /* CoctailSell.swift in Sources */,
 				82C6AC3D294F39D700A5FEDD /* ListCoctailsSell.swift in Sources */,

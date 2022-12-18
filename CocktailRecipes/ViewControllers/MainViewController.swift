@@ -9,24 +9,48 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var coctailCollectionView: UICollectionView!
     
-
+    
+    private var coctails: [Coctail] = []
+    private var coctailName: [Coctail] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchListCoctails()
         
-        NetworkManager.shared.cocktailRequest()
     }
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            coctails.count
+           }
+        
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CoctailSell
+            
+            let coctail = coctails[indexPath.item]
+            cell.configure(with: coctail)
+            
+            return cell
+        }
+    }
+
+
+extension MainViewController {
+    func fetchListCoctails() {
+        NetworkManager.shared.fetch(Coctails.self, from: Links.cocktailUrl.rawValue) { [weak self] result in
+            switch result {
+            case .success(let drinks):
+                self?.coctails = drinks.drinks
+                //self?.coctailName =
+                self?.coctailCollectionView.reloadData()
+                print(drinks.drinks.count)
+                print(drinks)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
-        return cell
-    }
-
 }
-
 

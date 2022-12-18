@@ -12,4 +12,19 @@ class CoctailSell: UICollectionViewCell {
     @IBOutlet weak var coctailImage: UIImageView!
     @IBOutlet weak var coctailNameLabel: UILabel!
     
+    func configure(with coctail: Coctail) {
+        coctailNameLabel.text = coctail.strDrink
+
+        
+        
+//        NetworkManager.shared.fetchImage(from: coctail.strDrinkThumb?.fastestEncoding.rawValue) { [weak self] result in
+//            switch result {
+//            case .success(let imageData):
+//                self?.courseImage.image = UIImage(data: imageData)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        
+    }
 }

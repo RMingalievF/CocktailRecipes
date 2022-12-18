@@ -13,18 +13,26 @@ class NetworkManager {
     
     private init() {}
     
-    func cocktailRequest() {
-        guard let url = URL(string:Links.cocktailUrl.rawValue) else {return }
-        URLSession.shared.dataTask(with: url){ data, _, error in
-            guard let data else {
-                print(error?.localizedDescription ?? "No ERROR")
+    func fetch<T: Decodable>(_ type: T.Type, from url: String, completion: @escaping(Result<T, NetworkError>)  -> Void) {
+        guard let url = URL(string: url) else {
+            completion(.failure(.invalidURL))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                completion(.failure(.noData))
                 return
             }
+            
             do {
-                let coctail = try JSONDecoder().decode(Drinks.self, from: data)
-                print(coctail)
-            } catch let error {
-                print(error)
+                let decoder = JSONDecoder()
+                let type = try decoder.decode(T.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(type))
+                }
+            } catch {
+                completion(.failure(.decodingError))
             }
         }.resume()
     }
