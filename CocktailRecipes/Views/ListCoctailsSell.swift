@@ -9,5 +9,8 @@ import UIKit
 
 class ListCoctailsSell: UITableViewCell {
     
+    @IBOutlet weak var coctailName: UILabel!
+    
     @IBOutlet weak var coctailImage: UIImageView!
+    
 }

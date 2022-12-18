@@ -13,7 +13,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     private var coctails: [Coctail] = []
-    private var coctailName: [Coctail] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +27,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CoctailSell
             
-            let coctail = coctails[indexPath.item]
-            cell.configure(with: coctail)
+            let coctailName = coctails[indexPath.item]
+            cell.configure(with: coctailName)
             
             return cell
         }
@@ -38,7 +37,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
 extension MainViewController {
     func fetchListCoctails() {
-        NetworkManager.shared.fetch(Coctails.self, from: Links.cocktailUrl.rawValue) { [weak self] result in
+        NetworkManager.shared.fetch(Coctails.self, from: Links.listAllCoctailsUrl.rawValue) { [weak self] result in
             switch result {
             case .success(let drinks):
                 self?.coctails = drinks.drinks

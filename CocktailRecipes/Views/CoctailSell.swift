@@ -17,14 +17,14 @@ class CoctailSell: UICollectionViewCell {
 
         
         
-//        NetworkManager.shared.fetchImage(from: coctail.strDrinkThumb?.fastestEncoding.rawValue) { [weak self] result in
-//            switch result {
-//            case .success(let imageData):
-//                self?.courseImage.image = UIImage(data: imageData)
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
+        NetworkManager.shared.fetchImage(from: coctail.strDrinkThumb) { [weak self] result in
+            switch result {
+            case .success(let imageData):
+                self?.coctailImage.image = UIImage(data: imageData)
+            case .failure(let error):
+                print(error)
+            }
+        }
         
     }
 }
