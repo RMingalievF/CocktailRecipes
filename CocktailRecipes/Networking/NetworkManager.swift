@@ -1,5 +1,5 @@
 //
-//  NetworkDataPicker.swift
+//  NetworkManager.swift
 //  Teamplate
 //
 //  Created by Руслан Мингалиев on 14.12.2022.
@@ -7,9 +7,11 @@
 
 import Foundation
 
-class ApiManager {
+class NetworkManager {
     
-    static let shared = ApiManager()
+    static let shared = NetworkManager()
+    
+    private init() {}
     
     func cocktailRequest() {
         guard let url = URL(string:Links.cocktailUrl.rawValue) else {return }
