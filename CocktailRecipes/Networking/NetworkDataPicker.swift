@@ -12,7 +12,7 @@ class ApiManager {
     static let shared = ApiManager()
     
     func cocktailRequest() {
-        guard let url = URL(string:Links.cocktail.rawValue) else {return }
+        guard let url = URL(string:Links.cocktailUrl.rawValue) else {return }
         URLSession.shared.dataTask(with: url){ data, _, error in
             guard let data else {
                 print(error?.localizedDescription ?? "No ERROR")
