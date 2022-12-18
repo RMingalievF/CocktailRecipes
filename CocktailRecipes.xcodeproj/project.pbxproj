@@ -9,20 +9,24 @@
 /* Begin PBXBuildFile section */
 		824DF0E2294A2170005002D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF0E1294A2170005002D1 /* AppDelegate.swift */; };
 		824DF0E4294A2170005002D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF0E3294A2170005002D1 /* SceneDelegate.swift */; };
-		824DF0E6294A2170005002D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF0E5294A2170005002D1 /* ViewController.swift */; };
+		824DF0E6294A2170005002D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF0E5294A2170005002D1 /* MainViewController.swift */; };
 		824DF0E9294A2170005002D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0E7294A2170005002D1 /* Main.storyboard */; };
 		824DF0EB294A2172005002D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EA294A2172005002D1 /* Assets.xcassets */; };
 		824DF0EE294A2172005002D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EC294A2172005002D1 /* LaunchScreen.storyboard */; };
 		824DF102294A2E11005002D1 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF101294A2E11005002D1 /* Links.swift */; };
 		824DF104294A3547005002D1 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF103294A3547005002D1 /* Drinks.swift */; };
 		824DF106294A3E38005002D1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF105294A3E38005002D1 /* NetworkManager.swift */; };
+		82C6AC39294F2FFD00A5FEDD /* LlistCoctailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC38294F2FFD00A5FEDD /* LlistCoctailsViewController.swift */; };
+		82C6AC3B294F30D600A5FEDD /* CoctailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC3A294F30D600A5FEDD /* CoctailRecipeViewController.swift */; };
+		82C6AC3D294F39D700A5FEDD /* ListCoctailsSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC3C294F39D700A5FEDD /* ListCoctailsSell.swift */; };
+		82C6AC40294F3A5400A5FEDD /* CoctailSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6AC3F294F3A5400A5FEDD /* CoctailSell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		824DF0DE294A2170005002D1 /* CocktailRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824DF0E1294A2170005002D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		824DF0E3294A2170005002D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		824DF0E5294A2170005002D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		824DF0E5294A2170005002D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		824DF0E8294A2170005002D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		824DF0EA294A2172005002D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824DF0ED294A2172005002D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		824DF101294A2E11005002D1 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		824DF103294A3547005002D1 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		824DF105294A3E38005002D1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		82C6AC38294F2FFD00A5FEDD /* LlistCoctailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlistCoctailsViewController.swift; sourceTree = "<group>"; };
+		82C6AC3A294F30D600A5FEDD /* CoctailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailRecipeViewController.swift; sourceTree = "<group>"; };
+		82C6AC3C294F39D700A5FEDD /* ListCoctailsSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoctailsSell.swift; sourceTree = "<group>"; };
+		82C6AC3F294F3A5400A5FEDD /* CoctailSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailSell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +70,8 @@
 		824DF0E0294A2170005002D1 /* CocktailRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				824DF0FC294A233D005002D1 /* Views */,
+				82C6AC3E294F39E100A5FEDD /* Views */,
 				824DF0F9294A2302005002D1 /* Storyboards */,
-				824DF0F8294A22CD005002D1 /* Services */,
 				824DF0F7294A22BC005002D1 /* Models */,
 				824DF0F5294A2266005002D1 /* Networking */,
 				824DF0F6294A2285005002D1 /* ViewControllers */,
@@ -86,7 +93,9 @@
 		824DF0F6294A2285005002D1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				824DF0E5294A2170005002D1 /* ViewController.swift */,
+				824DF0E5294A2170005002D1 /* MainViewController.swift */,
+				82C6AC38294F2FFD00A5FEDD /* LlistCoctailsViewController.swift */,
+				82C6AC3A294F30D600A5FEDD /* CoctailRecipeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,13 +106,6 @@
 				824DF103294A3547005002D1 /* Drinks.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		824DF0F8294A22CD005002D1 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		824DF0F9294A2302005002D1 /* Storyboards */ = {
@@ -133,9 +135,11 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		824DF0FC294A233D005002D1 /* Views */ = {
+		82C6AC3E294F39E100A5FEDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				82C6AC3C294F39D700A5FEDD /* ListCoctailsSell.swift */,
+				82C6AC3F294F3A5400A5FEDD /* CoctailSell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,10 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				824DF106294A3E38005002D1 /* NetworkManager.swift in Sources */,
-				824DF0E6294A2170005002D1 /* ViewController.swift in Sources */,
+				824DF0E6294A2170005002D1 /* MainViewController.swift in Sources */,
 				824DF0E2294A2170005002D1 /* AppDelegate.swift in Sources */,
 				824DF104294A3547005002D1 /* Drinks.swift in Sources */,
+				82C6AC39294F2FFD00A5FEDD /* LlistCoctailsViewController.swift in Sources */,
+				82C6AC40294F3A5400A5FEDD /* CoctailSell.swift in Sources */,
+				82C6AC3D294F39D700A5FEDD /* ListCoctailsSell.swift in Sources */,
 				824DF0E4294A2170005002D1 /* SceneDelegate.swift in Sources */,
+				82C6AC3B294F30D600A5FEDD /* CoctailRecipeViewController.swift in Sources */,
 				824DF102294A2E11005002D1 /* Links.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
