@@ -3,4 +3,54 @@
    uuid = "68F0BDFA-C440-4A3B-87AD-0E5FAC615CBC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA1A89FE-14E4-480D-9AD4-3869C9F4765C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CocktailRecipes/Networking/NetworkCoctailRecipesManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchCoctailRecipesInfo(from:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FA1A89FE-14E4-480D-9AD4-3869C9F4765C - 7fc3f1fc623c2949"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CocktailRecipes.NetworkCoctailRecipesManager.fetchCoctailRecipesInfo(from: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;CocktailRecipes.Coctails&gt;, CocktailRecipes.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CocktailRecipes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslanmingaliev/Library/Mobile%20Documents/com~apple~CloudDocs/iOs%20Developer/EducationJunior/CocktailRecipes/CocktailRecipes/Networking/NetworkCoctailRecipesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "FA1A89FE-14E4-480D-9AD4-3869C9F4765C - c122b1004eae769b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CocktailRecipes.NetworkCoctailRecipesManager.fetchCoctailRecipesInfo(from: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;CocktailRecipes.CoctailsRecip&gt;, CocktailRecipes.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CocktailRecipes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslanmingaliev/Library/Mobile%20Documents/com~apple~CloudDocs/iOs%20Developer/EducationJunior/CocktailRecipes/CocktailRecipes/Networking/NetworkCoctailRecipesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

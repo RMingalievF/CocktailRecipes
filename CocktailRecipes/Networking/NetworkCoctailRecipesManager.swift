@@ -22,7 +22,7 @@ class NetworkCoctailRecipesManager {
 	
 	private init() {}
 	
-	func fetchCoctailRecipesInfo(from url: String, completion: @escaping (Result<[Coctail], NetworkError>) -> Void) {
+	func fetchCoctailRecipesInfo(from url: String, completion: @escaping (Result<CoctailsRecip, NetworkError>) -> Void) {
 		guard let url = URL(string: urlAPI) else {
 			completion(.failure(.invalidURL))
 			return
@@ -38,12 +38,13 @@ class NetworkCoctailRecipesManager {
 				  (200..<300).contains(httpResponse.statusCode) else {
 				completion(.failure(.invalidStatusCode))
 				return
+				
 			}
 			do {
-				let coctailRecipes = try JSONDecoder().decode([Coctail].self, from: data)
+				let coctailRecipes = try JSONDecoder().decode(CoctailsRecip.self, from: data)
 				DispatchQueue.main.async {
 					completion(.success(coctailRecipes))
-					print(data)
+					print(coctailRecipes)
 				}
 			} catch {
 				completion(.failure(.decodingError))

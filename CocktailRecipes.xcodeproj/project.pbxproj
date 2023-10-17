@@ -13,10 +13,11 @@
 		824DF0EB294A2172005002D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EA294A2172005002D1 /* Assets.xcassets */; };
 		824DF0EE294A2172005002D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824DF0EC294A2172005002D1 /* LaunchScreen.storyboard */; };
 		824DF102294A2E11005002D1 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF101294A2E11005002D1 /* Links.swift */; };
-		824DF104294A3547005002D1 /* Coctails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF103294A3547005002D1 /* Coctails.swift */; };
+		824DF104294A3547005002D1 /* CoctailsRecip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DF103294A3547005002D1 /* CoctailsRecip.swift */; };
 		82C6755A2ADDAB26004DB5CB /* NetworkCoctailRecipesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C675592ADDAB26004DB5CB /* NetworkCoctailRecipesManager.swift */; };
 		82C6755C2ADDB075004DB5CB /* CoctailRecipesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6755B2ADDB075004DB5CB /* CoctailRecipesCollectionViewController.swift */; };
 		82C6755E2ADDB16A004DB5CB /* CoctailRecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6755D2ADDB16A004DB5CB /* CoctailRecipesCollectionViewCell.swift */; };
+		82C675602ADDD998004DB5CB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6755F2ADDD998004DB5CB /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		824DF0ED294A2172005002D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		824DF0EF294A2172005002D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824DF101294A2E11005002D1 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
-		824DF103294A3547005002D1 /* Coctails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctails.swift; sourceTree = "<group>"; };
+		824DF103294A3547005002D1 /* CoctailsRecip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailsRecip.swift; sourceTree = "<group>"; };
 		82C675592ADDAB26004DB5CB /* NetworkCoctailRecipesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoctailRecipesManager.swift; sourceTree = "<group>"; };
 		82C6755B2ADDB075004DB5CB /* CoctailRecipesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailRecipesCollectionViewController.swift; sourceTree = "<group>"; };
 		82C6755D2ADDB16A004DB5CB /* CoctailRecipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailRecipesCollectionViewCell.swift; sourceTree = "<group>"; };
+		82C6755F2ADDD998004DB5CB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				82C6755B2ADDB075004DB5CB /* CoctailRecipesCollectionViewController.swift */,
 				82C6755D2ADDB16A004DB5CB /* CoctailRecipesCollectionViewCell.swift */,
+				82C6755F2ADDD998004DB5CB /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -95,7 +98,7 @@
 		824DF0F7294A22BC005002D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				824DF103294A3547005002D1 /* Coctails.swift */,
+				824DF103294A3547005002D1 /* CoctailsRecip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,7 +137,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 824DF0F2294A2172005002D1 /* Build configuration list for PBXNativeTarget "CocktailRecipes" */;
 			buildPhases = (
-				82C675582ADDAA94004DB5CB /* Run Swiftlint */,
 				824DF0DA294A2170005002D1 /* Sources */,
 				824DF0DB294A2170005002D1 /* Frameworks */,
 				824DF0DC294A2170005002D1 /* Resources */,
@@ -194,34 +196,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		82C675582ADDAA94004DB5CB /* Run Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Swiftlint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n\tswiftlint\nelse\n\techo \"Warning: Swiftlint not installed\"\n\texit 1\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		824DF0DA294A2170005002D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C675602ADDD998004DB5CB /* TabBarViewController.swift in Sources */,
 				824DF0E2294A2170005002D1 /* AppDelegate.swift in Sources */,
-				824DF104294A3547005002D1 /* Coctails.swift in Sources */,
+				824DF104294A3547005002D1 /* CoctailsRecip.swift in Sources */,
 				82C6755A2ADDAB26004DB5CB /* NetworkCoctailRecipesManager.swift in Sources */,
 				82C6755C2ADDB075004DB5CB /* CoctailRecipesCollectionViewController.swift in Sources */,
 				824DF0E4294A2170005002D1 /* SceneDelegate.swift in Sources */,

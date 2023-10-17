@@ -11,26 +11,20 @@ private let reuseIdentifier = "Cell"
 
 class CoctailRecipesCollectionViewController: UICollectionViewController {
 
-	var coctailRecip: [Coctail] = []
+	//var coctailsRecip: [CoctailsRecip] = []
+	var coctailRecip: [CoctailRecip] = []
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		fetchCoctails()
-		
-
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
+	}
 
 	private func fetchCoctails() {
 		NetworkCoctailRecipesManager.shared.fetchCoctailRecipesInfo(from: NetworkCoctailRecipesManager.shared.urlAPI) { result in
 			switch result {
 			case .success(let coctail):
 				DispatchQueue.main.async {
-					self.coctailRecip = coctail
+					self.coctailRecip = coctail.drinks
 					self.collectionView.reloadData()
 				}
 			case .failure(let error):
@@ -42,24 +36,18 @@ class CoctailRecipesCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-		1
-        
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		coctailRecip.count
-    }
+	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		
+		return coctailRecip.count
+		
+	}
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-		guard let cell = collectionView.dequeueReusableCell(
-			withReuseIdentifier: "cell",
-			for: indexPath
-		) as? CoctailRecipesCollectionViewCell else { fatalError("Wrong cell") }
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CoctailRecipesCollectionViewCell
+		
 		let coctailRecipes = coctailRecip[indexPath.item]
+		
 		cell.configure(with: coctailRecipes)
 		
 		return cell

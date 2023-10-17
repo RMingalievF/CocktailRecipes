@@ -9,25 +9,25 @@ import UIKit
 
 class CoctailRecipesCollectionViewCell: UICollectionViewCell {
 	
-	@IBOutlet weak private var imageView: UIImageView! {
+	@IBOutlet private var imageView: UIImageView! {
 		didSet {
 			imageView.layer.cornerRadius = 10
 		}
 	}
 	
-	@IBOutlet weak private var coctailNameLabel: UILabel!
+	@IBOutlet private var coctailNameLabel: UILabel!
 	
-	func configure(with coctail: Coctail) {
+	func configure(with coctail: CoctailRecip) {
 		coctailNameLabel.text = coctail.strDrink
 		
-		NetworkCoctailRecipesManager.shared.fetchImage(from: coctail.strDrinkThumb!) { [weak self] result in
+		NetworkCoctailRecipesManager.shared.fetchImage(from: coctail.strDrinkThumb!) { result in
 			switch result {
+				
 			case .success(let imageData):
-				self?.imageView.image = UIImage(data: imageData)
+				self.imageView.image = UIImage(data: imageData)
 			case .failure(let error):
 				print(error)
 			}
 		}
-		
 	}
 }
